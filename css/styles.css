@@ -1,13 +1,26 @@
 body {
     background: aliceblue;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin: 2rem;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    min-height: 100vh;
 }
 
 footer {
-    text-align: center;
-    padding: 1.5rem;
+    font-size: 0.8rem;
     font-weight: bolder;
+    width: 100%;
+    position: absolute;
+    height: 0;
+    text-align: center;
+    bottom: 0;
+    left: 0;
+    border-top: 2px solid #cccccc;
+}
+
+footer li {
+    list-style-type: none;
 }
 
 a {
@@ -20,4 +33,30 @@ img {
 
 li {
     padding: 0.3rem 0;
+}
+
+.content {
+    margin: 1rem;
+}
+
+.page-links {
+    padding-bottom: 1rem;
+}
+/* Style the links to the top and home pages */
+.page-links li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 0.5rem;
+}
+
+.page-links a {
+    border: 2px solid rgba(29, 51, 45, 0.725);
+    border-radius: 0.6em;
+    padding: 0.5rem;
+    color: black;
+}
+
+.page-links a:hover {
+    background-color: #cccccc;
+    padding: 0.7rem;
 }
