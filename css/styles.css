@@ -65,6 +65,7 @@ li {
 }
 
 /* Restrict the width of the text in the steps to prepare the recipe */
-#steps-involved {
+#steps-involved, #recipe-description {
     width: 65%;
+    text-align: justify;
 }
