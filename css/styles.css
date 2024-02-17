@@ -28,7 +28,6 @@ footer {
     border-top: 2px solid #cccccc;
 }
 
-
 /* Center the contents on the homepage */
 .center-content {
     display: flex;
@@ -38,7 +37,6 @@ footer {
     font-size: 1.4em;
     text-align: center;
 }
-
 
 /* Remove bullets on links for nav and footer */
 .remove-bullets {
