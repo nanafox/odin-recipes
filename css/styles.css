@@ -1,5 +1,5 @@
 body {
-    background: aliceblue;
+    background: rgb(212, 222, 232);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 0;
     padding: 0;
@@ -8,10 +8,16 @@ body {
 }
 
 header {
-    border-bottom: 1px solid #cccccc;
+    border-bottom: 10px double #749188;
+    max-width: 1000px;
+    width: 50%;
+    text-align: center;
+    color: #075d42;
 }
+
+/* Footer styling */
 footer {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     font-weight: bolder;
     width: 100%;
     position: absolute;
@@ -22,29 +28,53 @@ footer {
     border-top: 2px solid #cccccc;
 }
 
-footer li {
+
+/* Center the contents on the homepage */
+.center-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15%;
+    font-size: 1.4em;
+    text-align: center;
+}
+
+
+/* Remove bullets on links for nav and footer */
+.remove-bullets {
     list-style-type: none;
 }
 
+/* Anchor links styling */
 a {
     text-decoration: none;
+    color: rgb(72, 62, 32);
 }
 
+a:hover {
+    color: #347d65;
+}
+
+/* Add a little radius around the border of images */
 img {
     border-radius: 0.4rem;
 }
 
+/* Space out the list items for readability */
 li {
     padding: 0.3rem 0;
 }
 
+/* A generic style to add some margin so element's are not attached to the sides of the screen */
 .content {
     margin: 1rem;
 }
 
+/* Links in other pages that leads back to the home page */
 .page-links {
     padding-bottom: 1rem;
 }
+
 /* Style the links to the top and home pages */
 .page-links li {
     list-style-type: none;
@@ -52,6 +82,7 @@ li {
     padding: 0.5rem;
 }
 
+/* Style the links as buttons */
 .page-links a {
     border: 2px solid rgba(29, 51, 45, 0.725);
     border-radius: 0.6em;
