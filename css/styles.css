@@ -28,7 +28,7 @@ footer {
     border-top: 2px solid #cccccc;
 }
 
-/* Center the contents on the homepage */
+/* Centers content */
 .center-content {
     display: flex;
     flex-direction: column;
@@ -56,6 +56,11 @@ a:hover {
 /* Add a little radius around the border of images */
 img {
     border-radius: 0.4rem;
+}
+
+img.recipe-img {
+    height: auto;
+    width: 800px;
 }
 
 /* Space out the list items for readability */
@@ -94,7 +99,23 @@ li {
 }
 
 /* Restrict the width of the text in the steps to prepare the recipe */
-#steps-involved, #recipe-description {
+.steps-involved,
+.recipe-description {
     width: 65%;
     text-align: justify;
+}
+
+/* Fix the gap between content on the recipe page */
+.recipe-main.center-content {
+    margin-top: 0;
+}
+
+/* left align the list items */
+.recipe-main.center-content li {
+    text-align: left;
+}
+
+/* reset the gap for the header on the recipe pages */
+.recipe-header {
+    margin: 0 auto;
 }
