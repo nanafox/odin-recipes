@@ -7,7 +7,8 @@ body {
     min-height: 100vh;
 }
 
-header {
+/* handle the title for each page */
+.title {
     border-bottom: 10px double #749188;
     max-width: 1000px;
     width: 50%;
@@ -68,11 +69,6 @@ li {
     padding: 0.3rem 0;
 }
 
-/* A generic style to add some margin so element's are not attached to the sides of the screen */
-.content {
-    margin: 1rem;
-}
-
 /* Links in other pages that leads back to the home page */
 .page-links {
     padding-bottom: 1rem;
@@ -81,21 +77,24 @@ li {
 /* Style the links to the top and home pages */
 .page-links li {
     list-style-type: none;
-    display: inline-block;
+    display: inline-flex;
     padding: 0.5rem;
 }
 
 /* Style the links as buttons */
-.page-links a {
+.page-links a,
+.flex-item a {
     border: 2px solid rgba(29, 51, 45, 0.725);
     border-radius: 0.6em;
     padding: 0.5rem;
     color: black;
 }
 
-.page-links a:hover {
+.page-links a:hover,
+.flex-item a:hover {
     background-color: #cccccc;
     padding: 0.7rem;
+    color: #347d65;
 }
 
 /* Restrict the width of the text in the steps to prepare the recipe */
@@ -118,4 +117,15 @@ li {
 /* reset the gap for the header on the recipe pages */
 .recipe-header {
     margin: 0 auto;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-right: 40px;
+}
+
+li.flex-item {
+    list-style-type: none;
 }
