@@ -3,8 +3,6 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 0;
     padding: 0;
-    position: relative;
-    min-height: 100vh;
 }
 
 /* handle the title for each page */
@@ -61,7 +59,7 @@ img {
 
 img.recipe-img {
     height: auto;
-    width: 800px;
+    min-width: 400px;
 }
 
 /* Space out the list items for readability */
@@ -119,13 +117,34 @@ li {
     margin: 0 auto;
 }
 
-.flex-container {
+/* style the navbar */
+nav .flex-container {
     display: flex;
     justify-content: flex-end;
-    gap: 10px;
-    margin-right: 40px;
+    align-items: baseline;
+    gap: 24px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #cccccc;
+    padding-right: 40px;
 }
 
 li.flex-item {
     list-style-type: none;
+}
+
+/* style the navbar logo */
+li.nav-logo {
+    margin-right: auto;
+    font-size: 24px;
+    font-style: oblique;
+    font-weight: bolder;
+}
+
+li.nav-logo a {
+    border: none;
+    color: #075d42
+}
+
+li.nav-logo a:hover {
+    background-color: inherit;
 }
